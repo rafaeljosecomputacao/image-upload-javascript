@@ -1,0 +1,106 @@
+/* Variables */
+:root {
+    --primary-color: #DF537B;
+    --secondary-color: #8F8F8F;
+    --light-color: #FCEEF2;
+    --dark-color: #3D3D3D;
+}
+
+/* General */
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+ion-icon {
+    font-size: 1.2rem;
+}
+
+/* Main */
+.card {
+    background-color: var(--light-color);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px 2px rgba(0, 0, 0, .5);
+}
+
+.image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid var(--primary-color);
+}
+
+.image input {
+    display: none;
+}
+
+.image label {
+    background-color: var(--primary-color);
+    position: absolute;
+    bottom: -5px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 5px solid var(--light-color);   
+}
+
+.image label ion-icon {
+    color: var(--light-color);
+}
+
+.name, 
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name {
+    margin: 2rem 0;
+}
+
+.name ion-icon, 
+.user ion-icon {
+    color: var(--primary-color);
+}
+
+.name h1, 
+.user p {
+    margin-left: .5rem;
+}
+
+.name h1 {
+    color: var(--dark-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.user p {
+    color: var(--secondary-color);
+    font-size: .9rem;
+    font-weight: 400;
+}
